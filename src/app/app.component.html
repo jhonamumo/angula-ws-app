@@ -1,16 +1,2 @@
-<h1>Hola Angular</h1>
-<h2>{{ title }}</h2>
-
-<p *ngIf="showData"> {{ nombre }} </p>
-<button (click)="mostrarOcultarDatos()" >
-    <!-- {{ nombreButton }} -->
-    <span *ngIf="showData">Ocultame</span>
-    <span *ngIf="!showData">Muestrame</span>
-</button>
-
-<h3>Peliculas destacadas</h3>
-<app-movie [movie]="item" *ngFor="let item of movies;"></app-movie>
-<hr />
-
-<h3>Peliculas del mes</h3>
-<app-movie [movie]="item" *ngFor="let item of movies;"></app-movie>
+<h1>Mi app</h1>
+<router-outlet></router-outlet>
